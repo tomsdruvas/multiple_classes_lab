@@ -53,15 +53,15 @@ class TestBus(unittest.TestCase):
         self.assertEqual(0, self.bus.passenger_count())
     
     def test_transfer_cash(self):
-        person = Person("Guido van Rossum", 64, 20, "Edi")
+        person = Person("Guido van Rossum", 64, 20)
         self.bus.transfer_cash(person, 10)
         self.assertEqual(10, self.bus.cash)
         self.assertEqual(10, person.cash)
 
     # @unittest.skip("Delete this line to run the test")
     def test_can_pick_up_passenger_from_bus_stop(self):
-        person_1 = Person("Guido van Rossum", 64, 20, "Edi")
-        person_2 = Person("Carol Willing", 50, 20, "Glasgow")
+        person_1 = Person("Guido van Rossum", 64, 20)
+        person_2 = Person("Carol Willing", 50, 20)
         bus_stop = BusStop("Waverly Station")
         bus_stop.add_to_queue(person_1)
         bus_stop.add_to_queue(person_2)

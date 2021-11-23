@@ -1,9 +1,9 @@
 class Person:
-    def __init__(self, name, age, cash, destination):
+    def __init__(self, name, age, cash):
         self.name = name
         self.age = age
         self.cash = cash
-        self.destination = destination
+        # self.destination = destination
 
 
     def reduce_cash(self, amount):

@@ -34,7 +34,7 @@ class Bus:
 
 
     def pick_up_from_stop(self, bus_stop_1):
-        if self.remaining_capacity > 0:
+        if self.remaining_capacity() > 0:
             for passager in bus_stop_1.queue:
                 self.passengers.append(passager)
         
