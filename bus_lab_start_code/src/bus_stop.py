@@ -3,6 +3,7 @@ class BusStop:
         self.name = name
         self.queue = []
         
+        
     
 
     def add_person(self, person):
@@ -16,4 +17,5 @@ class BusStop:
 
     def clear_queue(self):
         self.queue.clear()
+
 

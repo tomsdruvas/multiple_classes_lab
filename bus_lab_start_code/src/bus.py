@@ -6,6 +6,7 @@ class Bus:
         self.price = price
         self.passengers = []
         self.cash = 0
+        
     
     def drive(self):
         return "Brum brum"
@@ -31,5 +32,13 @@ class Bus:
         person.reduce_cash(amount)
         self.cash += amount
 
-    # def reduce_cash(self, passenger_1):
-    #     person.cash -= 
+
+    def pick_up_from_stop(self, bus_stop_1):
+        if self.remaining_capacity > 0:
+            for passager in bus_stop_1.queue:
+                self.passengers.append(passager)
+        
+
+        
+        
+        
